@@ -1,0 +1,509 @@
+.lead{
+	text-align: center;
+}
+
+.form-actions {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+.navbar-brand-brand{
+   font-size: 150px;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: #559ABC;
+  color: #000F16;
+  padding: 10px 10px 0px 30px;
+}
+
+.footer2{
+  /* position: fixed; */
+  bottom: 0px;
+  width: 100%;
+  background-color:black;
+  color: #000F16;
+  padding: 10px 10px 0px 30px;
+}
+
+
+.bg-img{
+background-image: url("../images/chicken_wine_dishes_70992_1920x1080.jpg");
+}
+
+.form1{
+  color: #F0EFF3;
+}
+
+#h1 display{
+text-align: center;
+font-family:"comic sans MS", cursive, sans-serif
+}
+
+.display-3{
+  color:red;
+  /* text-shadow: 2px 2px; */
+  font-family:"comic sans MS", cursive, sans-serif
+} 
+
+.bg-color {
+    background-color:brown;
+}
+
+.spacing{
+  padding-top: 20px;
+}
+
+.left-border hr{
+  border-color: black;
+  padding-top: 40px;
+  color: #fff ;
+}
+
+.bg-authpage{
+  background-image: url("../images/imagebanner.jpeg");
+   height: 800px;
+}
+
+.home-wrapper2 {
+    background-image: url("../images/imagebanner.jpg");
+    height: 600px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.center-align {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.text-white {
+    color: #fff!important;
+}
+
+#row1{
+	margin-bottom: 30px;
+}
+
+.content{
+	background: #fff;
+}
+
+.hideContent {
+    overflow: hidden;
+    line-height: 4em;
+    height: 25em;
+}
+
+
+.read-more {
+  border: 1px solid #000;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.read-more-link, .show-less-link{
+    text-decoration: none;
+    font-weight: bolder;
+    color: red;
+}
+
+ a:hover{
+	text-decoration: none;
+	color: red;
+}
+
+.position{
+  padding: 10px 10px 10px 10px;
+  margin: auto;
+  padding: 10px;
+   border: 3px solid red;
+}
+
+.btn btn-primary{
+  padding: 10px 10px 10px 10px;
+  background-color:white
+}
+
+
+.loginform{
+ padding-top: 20px;
+}
+
+.container{  
+  width:100%;
+}
+
+.center{
+  margin: auto;
+}
+
+/*...................................  */
+ /* navbar-brand {
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+navbar-brand .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;
+}
+navbar-brand:hover .after {
+    display: block;
+    background: rgba(0, 0, 0, .6);
+}  */
+
+  .home-wrapper {
+      background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../images/roastedFish.jpg" );
+     /* background-image: url("../images/roastedFish.jpg");  */
+    height: 300px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+} 
+  
+ .home-wrapper4 {
+      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../images/catalog.jpg" );
+     /* background-image: url("../images/roastedFish.jpg");  */
+    height: 300px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.home-wrapper5 {
+      background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../images/favorite.jpg" );
+     /* background-image: url("../images/roastedFish.jpg");  */
+    height: 300px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+    input.transparent-input{
+       background-color:rgba(0,0,0,0) !important;
+       border:none !important;
+    }
+
+     text.transparent-input{
+       background-color:transparent !important;
+       border:none !important;
+    }
+
+
+    /*................modal css  */
+
+ 
+/****** LOGIN MODAL ******/
+.loginmodal-container {
+  padding: 30px;
+  max-width: 350px;
+  width: 100% !important;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto;
+}
+
+.loginmodal-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: roboto;
+}
+
+.loginmodal-container input[type=submit] {
+  width: 100%;
+  display:round ;
+  margin-bottom: 10px;
+  position: relative;
+  color:white;
+  border-radius:40px;
+}
+
+.loginmodal-container input[type=text], input[type=password] {
+  height: 44px;
+    border-radius: 5px;  
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+   box-sizing: border-box; 
+   -moz-box-sizing: border-box;  
+}
+
+.loginmodal-container input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid red;
+  border-top: 1px solid red;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.loginmodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+  background-color: white;
+/* border-radius: 3px; */
+/* -webkit-user-select: none;
+  user-select: none; */
+}
+
+.loginmodal-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color:white;  
+  /* color: black; */
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color:red;
+  padding: 17px 0px;
+  /* width:100% */
+  /* font-family: roboto; */
+  font-size: 14px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.loginmodal-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color:orangered
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.loginmodal-container a {
+  text-decoration: none;
+  /* color: #666; */
+  color:black;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  /* opacity: 0.6; */
+  transition: opacity ease 0.5s;
+  
+} 
+
+.login-help{
+  font-size: 12px;
+  /* background: rosybrown */
+}
+.login-help:hover{
+  /* color:rosybrown; */
+}
+
+
+
+
+/****** SIGNUP MODAL ******/
+
+.signUpmodal-container {
+  padding: 30px;
+  max-width: 350px;
+  width: 100% !important;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto;
+}
+
+.signUpmodal-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: roboto;
+}
+
+.signUpmodal-container input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  border-radius:20px;
+}
+
+.signUpmodal-container input[type=text], input[type=password],input[type=email],input[type=number] {
+  height: 44px;
+  font-size: 16px;
+    border-radius: 5px;  
+  width: 100%;
+  margin-bottom: 10px;
+  /* -webkit-appearance: none; */
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.signUpmodal-container input[type=text]:hover, input[type=password]:hover ,input[type=email]:hover,input[type=number]:hover {
+  border: 1px solid red;
+  border-top: 1px solid red;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.signUpmodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+  background-color: white;
+ /* border-radius: 3px; */
+ -webkit-user-select: none;
+  user-select: none;  
+}
+
+.signUpmodal-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: black;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color:red;
+  padding: 17px 0px;
+   font-family: roboto; 
+  font-size: 14px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.signUpmodal-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color:orangered
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.signUpmodal-container a {
+  text-decoration: none;
+  color:black;
+  font-weight: 400;
+  -webkit-text-fill-color: black;
+  text-align: center;
+  display: inline-block;
+   opacity: 0.6; 
+  transition: opacity ease 0.5s;
+} 
+
+/****** FORGOT MODAL ******/
+
+.forgotmodal-container {
+  padding: 30px;
+  max-width: 350px;
+  width: 100% !important;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto;
+}
+
+.forgotmodal-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: roboto;
+}
+
+.forgotmodal-container input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  border-radius:20px;
+}
+
+.forgotmodal-container input[type=text], input[type=password],input[type=email],input[type=number] {
+  height: 44px;
+  font-size: 16px;
+    border-radius: 5px;  
+  width: 100%;
+  margin-bottom: 10px;
+  /* -webkit-appearance: none; */
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.forgotmodal-container input[type=email]:hover,input[type=number]:hover {
+  border: 1px solid red;
+  border-top: 1px solid red;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.forgotmodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+  background-color: white;
+ /* border-radius: 3px; */
+ -webkit-user-select: none;
+  user-select: none;  
+}
+
+.forgotmodal-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: black;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color:red;
+  padding: 17px 0px;
+   font-family: roboto; 
+  font-size: 14px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.forgotmodal-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color:orangered
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.forgotmodal-container a {
+  text-decoration: none;
+  color:black;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+   opacity: 0.6; 
+  transition: opacity ease 0.5s;
+} 
+ 
