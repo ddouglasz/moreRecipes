@@ -12,25 +12,7 @@
    font-size: 150px;
 }
 
-.footer{
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  background-color: #559ABC;
-  color: #000F16;
-  padding: 10px 10px 0px 30px;
-}
-
-.footer2{
-  /* position: fixed; */
-  bottom: 0px;
-  width: 100%;
-  background-color:black;
-  color: #000F16;
-  padding: 10px 10px 0px 30px;
-}
-
-
+ 
 .bg-img{
 background-image: url("../images/chicken_wine_dishes_70992_1920x1080.jpg");
 }
@@ -57,12 +39,12 @@ font-family:"comic sans MS", cursive, sans-serif
 .spacing{
   padding-top: 20px;
 }
-
+/* 
 .left-border hr{
   border-color: black;
   padding-top: 40px;
   color: #fff ;
-}
+} */
 
 .bg-authpage{
   background-image: url("../images/imagebanner.jpeg");
