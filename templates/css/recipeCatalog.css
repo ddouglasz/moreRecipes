@@ -42,6 +42,15 @@
 .center{
   margin: auto;
 } 
+.home-wrapper4 {
+      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../images/catalog.jpg" );
+     /* background-image: url("../images/roastedFish.jpg");  */
+    height: 300px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
       
 
 .input-group input[type=text]:hover, input[type=password]:hover {
