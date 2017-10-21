@@ -60,7 +60,7 @@ font-family:"comic sans MS", cursive, sans-serif
 .content{
 	background: #fff;
 }
-.read-more {
+/* .read-more {
   border: 1px solid #000;
   padding: 15px;
   margin-bottom: 20px;
@@ -70,7 +70,7 @@ font-family:"comic sans MS", cursive, sans-serif
     text-decoration: none;
     font-weight: bolder;
     color: red;
-}
+} */
 
  a:hover{
 	text-decoration: none;
@@ -83,14 +83,10 @@ font-family:"comic sans MS", cursive, sans-serif
   padding: 10px;
    border: 3px solid red;
 }
-
-.btn btn-primary{
-  padding: 10px 10px 10px 10px;
-  background-color:white
-}
+/* 
 .loginform{
  padding-top: 20px;
-}
+} */
 .container{  
   width:100%;
 }
