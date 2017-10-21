@@ -18,4 +18,6 @@ whilst building things that matter and that the best way to learn is by building
 This​ ​project​ ​has​ ​one​ ​objective:​ create opportunities for learning where they build real products.
 In this way, we inspire change in the African tech landscape.
 
-name:
+name: Egiemeh Stephen Douglas
+phone number: 07031676363
+email       : Douglasegiemeh@gmail.com
