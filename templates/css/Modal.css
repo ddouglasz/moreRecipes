@@ -64,11 +64,9 @@
 }
 
 .loginmodal-submit {
-  /* border: 1px solid #3079ed; */
-  border: 0px;
+   border: 0px;
   color:white;  
-  /* color: black; */
-  text-shadow: 0 1px rgba(0,0,0,0.1); 
+   text-shadow: 0 1px rgba(0,0,0,0.1); 
   background-color:red;
   padding: 17px 0px;
    width:100% 
