@@ -20,17 +20,6 @@
   color: #000F16;
   padding: 10px 10px 0px 30px;
 }
-
-.footer2{
-  /* position: fixed; */
-  bottom: 0px;
-  width: 100%;
-  background-color:black;
-  color: #000F16;
-  padding: 10px 10px 0px 30px;
-}
-
-
 .bg-img{
 background-image: url("../images/chicken_wine_dishes_70992_1920x1080.jpg");
 }
