@@ -7,7 +7,7 @@
     background-color: transparent;
     text-align: center;
 }
-
+/* 
 .footer{
   position: fixed;
   bottom: 0px;
@@ -15,22 +15,22 @@
   background-color: #559ABC;
   color: #000F16;
   padding: 10px 10px 0px 30px;
-}
-.bg-img{
+} */
+/* .bg-img{
 background-image: url("../images/chicken_wine_dishes_70992_1920x1080.jpg");
-}
+} */
 
 .form1{
   color: #F0EFF3;
 }
-
+/* 
 #h1 display{
 text-align: center;
 font-family:"comic sans MS", cursive, sans-serif
-}
+} */
 
 .display-3{
-  color:red;
+  color:brown;
   /* text-shadow: 2px 2px; */
   font-family:"comic sans MS", cursive, sans-serif
 } 
@@ -43,11 +43,7 @@ font-family:"comic sans MS", cursive, sans-serif
   padding-top: 20px;
 }
 
-.left-border hr{
-  border-color: black;
-  padding-top: 40px;
-  color: #fff ;
-}
+ 
 .center-align {
     text-align: center;
     padding-bottom: 20px;
