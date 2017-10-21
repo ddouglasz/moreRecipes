@@ -7,28 +7,9 @@
     background-color: transparent;
     text-align: center;
 }
-/* 
-.footer{
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  background-color: #559ABC;
-  color: #000F16;
-  padding: 10px 10px 0px 30px;
-} */
-/* .bg-img{
-background-image: url("../images/chicken_wine_dishes_70992_1920x1080.jpg");
-} */
-
 .form1{
   color: #F0EFF3;
 }
-/* 
-#h1 display{
-text-align: center;
-font-family:"comic sans MS", cursive, sans-serif
-} */
-
 .display-3{
   color:brown;
   /* text-shadow: 2px 2px; */
@@ -49,21 +30,11 @@ font-family:"comic sans MS", cursive, sans-serif
 .content{
 	background: #fff;
 }
- /* a:hover{
+  a:hover{
 	text-decoration: none;
 	color: red;
-} */
-
-/* .position{
-  padding: 10px 10px 10px 10px;
-  margin: auto;
-  padding: 10px;
-   border: 3px solid red;
-} */
-/* 
-.loginform{
- padding-top: 20px;
-} */
+} 
+ 
 .container{  
   width:100%;
 }
@@ -71,14 +42,14 @@ font-family:"comic sans MS", cursive, sans-serif
 .center{
   margin: auto;
 } 
-    input.transparent-input{
+     /* input.transparent-input{
        background-color:rgba(0,0,0,0) !important;
        border:none !important;
     }
      text.transparent-input{
        background-color:transparent !important;
        border:none !important;
-    }
+    }  */
 
 
      
