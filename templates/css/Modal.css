@@ -236,4 +236,16 @@
   font-size: 14px;
   /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
 }
+
  
+
+.forgotmodal-container a {
+  text-decoration: none;
+  color:black;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+   opacity: 0.6; 
+  transition: opacity ease 0.5s;
+} 
+  
