@@ -39,15 +39,14 @@
   background: #fff;
   border: 1px solid #d9d9d9;
   border-top: 1px solid #c0c0c0;
-  /* border-radius: 2px; */
-  padding: 0 8px;
+   padding: 0 8px;
    box-sizing: border-box; 
    -moz-box-sizing: border-box;  
 }
 
 .loginmodal-container input[type=text]:hover, input[type=password]:hover {
-  border: 1px solid red;
-  border-top: 1px solid red;
+  border: 1px brown;
+  border-top: 1px brown;
   -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
   -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
