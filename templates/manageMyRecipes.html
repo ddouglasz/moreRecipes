@@ -9,49 +9,36 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 <body>
-<div class="pos-f-t">
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg p-1">
-      <a class="btn btn-danger" href="index.html" role="button">home</a>
-      <a class="btn btn-danger" href="recipeCatalog.html" role="button">  catalog </a>
-      <a class="btn btn-danger" href="profilePage.html" role="button">my profile</a>
-      <a class="btn btn-danger" href="index.html" role="button"> log out</a>
-      
-     </div>
+<nav class="navbar navbar-toggleable-md navbar-light bg-danger">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+     <a class="btn btn-danger" href="recipeCatalog.html" role="button">recipes catalog</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+          <a class="btn btn-danger" href="profilePage.html" role="button">profile</a>
+      </li>
+      <li class="nav-item">
+          <a class="btn btn-danger" href="authenticatedUserPage.html" role="button">edit profile</a>
+      </li>
+      <li class="nav-item">
+         <a class="btn btn-danger" href="index.html" role="button"> log out</a>
+      </li>
+    </ul>
+     <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+    </form> 
   </div>
-  <nav class="navbar navbar-inverse bg-outline-danger">
-    <button class="navbar-toggler" type="button " data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class=""> <a class="navbar-brand" href="index.html"><img src="images/moreRecipeLogo.jpg"></a>
-</span>
-    </button>
-  </nav>
+</nav>
 </div>
-
-
-	<div class="row">
-	    	<div class="col-md-4">
-	    	</div>
-	    	<div class="col-md-4">
-	    		<form>
-	    			<div class= "input-group">
-	    				<span class= "input-group-addon">
-	    					 <i class="fa fa-search fa-lg fa-fw" aria-hidden="true"></i> 
-	    				</span>
-	    				<input type="text" class="form-control" placeholder="Enter search input" aria-label="">
-	    				<span class="input-group-btn">
-			        		<button class="btn btn-outline-danger" type="button">Search</button>
-			    		</span>
-					</div>
-					
-				</form>
-			</div>
-		</div>
- 
+ <br><br>
       <div class="form-actions">
           <p><h1>Manage recipes</h1></p>
           <h5>View favorites,modify and add new Recipes</h5>
       </div><hr>
-          
+          <br><br><br><br>
           <div class= "col-addrecipe">
          <!-- <button type="button" class="btn btn-danger ">Get Started with the Recipe Catalog</button><br><br> -->
                     <!-- <button type="button" class="btn btn-danger  ">My Favorite Recipe</button><br><br> -->
@@ -126,7 +113,7 @@
   </div>
 </div> 
  	<div class="form-actions">
-     
+       <br><br><br><br>
        <h3>My favorite Recipes</h3>
    </div><br>
 
