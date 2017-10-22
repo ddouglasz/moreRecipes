@@ -154,6 +154,29 @@ font-family:"comic sans MS", cursive, sans-serif
        border:none !important;
     }
 
+    .home-wrapper {
+      background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../images/roastedFish.jpg" );
+     /* background-image: url("../images/roastedFish.jpg");  */
+    height: 300px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    
+} 
+  
+@media (max-width: 575px) { 
+.display-3 {
+    font-size: 30px;
+}
+.home-wrapper {
+min-height:260px;
+height:auto;
+}
+.home-wrapper img {
+width:100%;
+}
+}
+
 
     /*.....modal... styling  */
  
@@ -264,7 +287,7 @@ font-family:"comic sans MS", cursive, sans-serif
   /* color:rosybrown; */
 }
 
-
+ 
 
 
 /****** SIGNUP MODAL ******/
@@ -475,26 +498,4 @@ font-family:"comic sans MS", cursive, sans-serif
   -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
   -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-}
-.home-wrapper {
-      background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../images/roastedFish.jpg" );
-     /* background-image: url("../images/roastedFish.jpg");  */
-    height: 300px;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    
-} 
-  
-@media (max-width: 575px) { 
-.display-3 {
-    font-size: 30px;
-}
-.home-wrapper {
-min-height:260px;
-height:auto;
-}
-.home-wrapper img {
-width:100%;
-}
 }
