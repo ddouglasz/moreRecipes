@@ -55,8 +55,11 @@
     background-color:transparent;
     border:white;
       border-top:1px solid red;
+      border-bottom:1px solid red;
       border-left: 1px solid red;
-       border-bottom: 1px solid red;
+      border-right: 1px solid red;
+      -webkit-text-fill-color: white;
+       /* border-bottom: 1px solid red; */
 }      
 .input-group input[type=text]:hover, input[type=password]:hover, input[type=btn]:hover {
   border: 1px solid red;
