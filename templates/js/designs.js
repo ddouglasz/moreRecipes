@@ -27,3 +27,20 @@
 //   })
   
 // });
+
+// $('.carousel').carousel({
+//   interval: 2000
+// })
+// $('.carousel').carousel('cycle')
+// // Cycles through the carousel items from left to right.
+
+// $('.carousel').carousel('pause')
+// // Stops the carousel from cycling through items.
+
+// $('.carousel').carousel(number)
+// // Cycles the carousel to a particular frame (0 based, similar to an array).
+
+// $('.carousel').carousel('prev')
+// // Cycles to the previous item.
+
+// $('.carousel').carousel('next')
