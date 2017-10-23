@@ -174,4 +174,10 @@ height:auto;
 .home-wrapper img {
 width:100%;
 }
+.card{
+    min-height:150px;
 }
+}
+/* .card{
+    min-height:200px;
+} */
