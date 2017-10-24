@@ -8,8 +8,8 @@
   margin-left:20px
 }
 .row{
-  margin-right:0px;
-  margin-left:0px;
+   margin-right:0px!important;
+  margin-left:15px;
 }
 
 .form-actions {
@@ -164,6 +164,7 @@ font-family:"comic sans MS", cursive, sans-serif
       background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../images/roastedFish.jpg" );
      /* background-image: url("../images/roastedFish.jpg");  */
     height: 300px;
+    width:auto;
     color: white;
     font-weight: bold;
     text-align: center;
@@ -292,9 +293,9 @@ width:100%;
   font-size: 12px;
   /* background: rosybrown */
 }
-.login-help:hover{
+/* .login-help:hover{ */
   /* color:rosybrown; */
-}
+/* } */
 
  
 
