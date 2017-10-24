@@ -45,7 +45,7 @@ font-family:"comic sans MS", cursive, sans-serif
 }
 
 .display-3{
-  color:red;
+  color:white;
   /* text-shadow: 2px 2px; */
   font-family:"comic sans MS", cursive, sans-serif
 } 
@@ -176,6 +176,10 @@ width:100%;
 }
 .card{
     min-height:150px;
+}
+
+.navbar-brand img {
+    width:200px;
 }
 }
 /* .card{
