@@ -149,6 +149,19 @@ font-family:"comic sans MS", cursive, sans-serif
 .center{
   margin: auto;
 }
+/* .navbar.trasparent-input{
+background-color:rgba(0,0,0,0) !important;
+} */
+/* .navbar{
+   top:0px;
+ left:800px;
+ width:600px; 
+ background:none;  } */
+ .test{
+background-color: rgba(0,0,0,.0001) !important;
+}
+
+
  
     input.transparent-input{
        background-color:rgba(0,0,0,0) !important;
