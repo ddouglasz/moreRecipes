@@ -19,6 +19,9 @@
   font-size: 1.8em;
   font-family: roboto;
 }
+.ligonmodal-login-help a{
+color:black!important;
+}
 
 .loginmodal-container input[type=submit] {
   width: 100%;
