@@ -40,3 +40,13 @@
 	text-decoration: none;
 	color: red;
 } 
+.nav-item3{
+    /* float:left!important; */
+     margin-left:70%!important;
+     /* margin-top:auto!important */
+  }
+  .form-intline{
+    /* float:left!important; */
+     margin-right:50%!important;
+     /* margin-top:auto!important */
+  }

@@ -18,7 +18,7 @@
 .nav-item3{
   /* float:left!important; */
    margin-left:70%!important;
-   margin-top:10%!important
+   /* margin-top:auto!important */
 }
   .nav-item4{
   /* float:left!important; */
@@ -218,8 +218,8 @@ width:100%;
 }
 .nav-item3{
   /* float:left!important; */
-   margin-left:70%!important;
-   margin-top:10%!important
+   margin-left:80%!important;
+   /* margin-top:auto!important */
 }
 }
 
