@@ -11,12 +11,21 @@
    margin-right:0px!important;
   margin-left:15px;
 }
-.title-area{
-  float:right!important;
+.nav-item2{
+  /* float:right!important; */
+  /* margin-left:80%!important; */
 }
-.title-area2{
-  float:left!important;
+.nav-item3{
+  /* float:left!important; */
+   margin-left:70%!important;
+   margin-top:10%!important
 }
+  .nav-item4{
+  /* float:left!important; */
+   /* margin-left:80%!important; */
+   /* margin-left:auto; */
+}
+
 .form-actions {
     margin: 0;
     background-color: transparent;
@@ -72,6 +81,9 @@ font-family:"comic sans MS", cursive, sans-serif
   border-color: black;
   padding-top: 40px;
   color: #fff ;
+}
+.btn-danger{
+  color:white;
 }
 
 /* .bg-authpage{
@@ -204,6 +216,11 @@ height:auto;
 .home-wrapper img {
 width:100%;
 }
+.nav-item3{
+  /* float:left!important; */
+   margin-left:70%!important;
+   margin-top:10%!important
+}
 }
 
 
@@ -222,10 +239,15 @@ width:100%;
   font-family: roboto;
 }
 
-.loginmodal-container h1 {
+.loginmodal-container #h4 {
   text-align: center;
   font-size: 1.8em;
   font-family: roboto;
+   background-color: white;
+}
+
+.navbar-inverse{
+  color:white!important;
 }
 
 .loginmodal-container input[type=submit] {
@@ -299,7 +321,7 @@ width:100%;
 .loginmodal-container a {
   text-decoration: none;
   /* color: #666; */
-  color:black;
+  color:white;
   font-weight: 400;
   text-align: center;
   display: inline-block;
