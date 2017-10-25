@@ -76,5 +76,27 @@
   width: 50px;
   display:none;
 }
+.nav-item3{
+  /* float:left!important; */
+   margin-left:80%!important;
+   /* margin-top:auto!important */
+}
+@media (max-width: 575px) { 
+  .display-3 {
+      font-size: 30px;
+  }
+  .home-wrapper {
+  min-height:260px;
+  height:auto;
+  }
+  .home-wrapper img {
+  width:100%;
+  }
+  .nav-item3{
+    /* float:left!important; */
+     margin-left:80%!important;
+     /* margin-top:auto!important */
+  }
+  }
 
   

@@ -1,478 +1,260 @@
-  	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<link rel="stylesheet" type="text/css" href="css/recipeCatalog.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	</head>
-
-	<body>
-	<!-- <nav class="navbar navbar-toggleable-md navbar-light bg-faded"> 
-		 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-<ul class="navbar-nav mr-auto">
-<li class="nav-item">
-<a class="navbar-brand" href="index.html"><img src="images/moreRecipeLogo.jpg"></a>
-</li> 
-</ul>
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
- 	        <ul>
- 					 <a class="btn btn-danger" href="#" data-toggle="modal" data-target="#login-modal">login</a> 
- 				<a class="btn btn-danger" href="#" data-toggle="modal" data-target="#signUp-modal">signup</a> 
-
-	        </ul>
-	    </div>
-    </nav> -->
-    
-
-
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/recipeCatalog.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
 <nav class="navbar navbar-toggleable-md navbar-light bg-danger">
-    <ul class="navbar-nav mr-auto">
+  <ul class="navbar-nav mr-auto">
 <!-- <li class="nav-item">
 <a class="navbar-brand" href="index.html"><img src="images/moreRecipeLogo.jpg"></a>
 </li>  -->
 </ul>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
 
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-     <a class="btn btn-danger" href="index.html" role="button">home</a>
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-          <a class="btn btn-danger" href="profilePage.html" role="button"> manage recipes</a>
-      </li>
-             <li class="nav-item active">
-          <a class="btn btn-danger" href="manageMyRecipes.html" role="button"> manage recipes</a>
-      </li>
-      <li class="nav-item">
-          <a class="btn btn-danger" href="authenticatedUserPage.html" role="button">edit profile</a>
-      </li>
-         
-        
-      <li class="nav-item">
-         <a class="btn btn-danger" href="index.html" role="button"> log out</a>
-      </li>
-    </ul>
-    <!-- <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form> -->
-  </div>
+<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+   <a class="btn btn-danger" href="index.html" role="button">home</a>
+  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    <li class="nav-item active">
+        <a class="btn btn-danger" href="manageMyRecipes.html" role="button"> manage recipes</a>
+    </li>
+           <li class="nav-item active">
+        <a class="btn btn-danger" href="profilePage.html" role="button">profile</a>
+    </li>
+    <li class="nav-item">
+        <a class="btn btn-danger" href="authenticatedUserPage.html" role="button">edit profile</a>
+    </li>
+
+
+
+    <li class="nav-item active">
+      <a  class="btn btn-danger "   href="#" data-toggle="modal" data-target="#login-modal"> signin</a>
+  </li>
+         <li class="nav-item active">
+          <a class="btn btn-danger"   href="#" data-toggle="modal" data-target="#signUp-modal">signup</a>
+  </li>
+  <li class="nav-item3">
+      <a class="btn btn-danger" href="index.html" role="button">logout</a>
+  </li>
+      
+         <!-- <div class="title-area">  -->
+           <!-- float this left    -->
+<!-- 		 
+         <div class="nav-item"  > 
+     <a  class="btn btn-danger "   href="#" data-toggle="modal" data-target="#login-modal"> signin </a> 
+      </li>  
+             <li class="nav-item"  >  
+           <a class="btn btn-danger"   href="#" data-toggle="modal" data-target="#signUp-modal">signup</a> 
+      </li>  
+      <li class="nav-item"  >  
+       <a class="btn btn-danger"  href="index.html" role="button"> log out</a>
+    
+     </li> -->
+  </div>  
+   
+</div>
 </nav>
 
 
+<div class="jumbotron jumbotron-fluid home-wrapper">		
+  <div class="container">
 
-<div class="jumbotron jumbotron-fluid home-wrapper">
-		<div class="container">
-			<h1 class="display-3">More-Recipes catalog</h1>
-			<p class="lead"><i>explore thousands of recipes...</i></p>
-		</div>
-			
-	    <div class="row">
-	    	<div class="col-md-4">
-	    	</div>
-	    	<div class="col-md-4">
-	    		<form>
-	    			<div class= "input-group">
-	    				<span class= "input-group-addon">
-	    					 <i class="fa fa-search fa-lg fa-fw" aria-hidden="true"></i> 
-	    				</span>
-	    				<input type="text" class="form-control" placeholder="Enter search input" aria-label="">
-	    				<span class="input-group-btn">
-			        		<button class="btn btn-outline-secondary" type="button"><strong>Search</strong></button>
-			    		</span>
-					</div>
-					
-				</form>
-			</div>
-		</div>
-	</div>
-	<section id="top-recipes">
-		<div>
-		  <h3 class="center-align">Popular Recipes</h3>
-		</div>
-		 
- <div class="card-deck">
-  <div class="card">
-	<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-	    <img class="img-fluid" src="images/vegetablesoup.jpg" alt="Card image cap" width="537.5">
-          <div class="card-block">
-            <h4 class="card-title">Nigerian Recipes</h4>
-           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-			<a href="ProfilePage.html" role="button"><strong><h6>@mr_bean</h6></strong></a>
-		   <a href="#" class="btn btn-outline-danger"><strong>add to my favorite</strong></a>
- 	       <p class="card-text"><small class="text-muted">Last updated 4 mins ago</small></p>
-	      <div class="card-footer">
- 		 <p><a class="btn-floating">
-        <i class="fa fa-thumbs-o-up fa-lg fa-fw" aria-hidden="true"></i><strong>309</strong>
-        <i class="fa fa-thumbs-o-down fa-lg fa-fw" aria-hidden="true"></i><strong>198</strong>
-		<i class="fa fa-commenting-o" aria-hidden="true"></i><strong>156</strong></a></p>
-	</div>
-    </div>
+
+
+    <h1 class="display-3">Recipe Catalog</h1>
+    <!-- <p class="lead"><i>It's okay to salivate...</i></p> -->
   </div>
-
-  <div class="card">
-	<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-	  <img class="img-fluid" src="images/lasagna.jpg" alt="Card image cap" width="537.5">
- <div class="card-block">
-		<h4 class="card-title">Italian Recipes</h4>
-        <p class="card-text">For a casual holiday meal, you can't go wrong with this rich and meaty lasagna. My grown sons and daughter-in-law request it for their birthdays, too. </p>
+    
+    <div class="row">
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+        <form>
+          <div class= "input-group">
+            <!-- <span class= "input-group-addon"> -->
+               <!-- <i class="fa fa-search fa-lg fa-fw" aria-hidden="true"></i>  -->
+            <!-- </span> -->
+            <input type="text" class="form-control" placeholder="Enter search input" aria-label="">
+            <span class="input-group-btn">
+                <button class="btn btn-danger" type="button"><strong>Search</strong></button>
+            </span>
+        </div>
         
-
-<!-- Button trigger modal -->
-<!-- <a class="text btn-outline-secondary" data-toggle="modal" data-target="#exampleModalLong"> read more</a> -->
- 
-
- <!-- <a href="exampleModalLong" role="button"><strong><h6>read more</h6></strong></a>  -->
-	<a href="#" data-toggle="modal" data-target="#exampleModalLong"><strong><h6>read more</h6></strong></a> 
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-            <!--  -->
-<div class="card">
-	<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-	  <img class="img-fluid" src="images/lasagna.jpg" alt="Card image cap" width="537.5">
- <div class="card-block">
-		<h4 class="card-title">Italian Recipes</h4>
-		<p class="card-text">For a casual holiday meal, you can't go wrong with this rich and meaty lasagna. My grown sons and daughter-in-law request it for their birthdays, too. </p>
-		<a href="ProfilePage.html" role="button"><strong><h6>@chefsteve</h6></strong></a>
-		<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-    <div class="card-footer">
- 		<!-- <p><a class="btn-floating">
-        <i class="fa fa-thumbs-o-up fa-lg fa-fw" aria-hidden="true"></i><strong>158</strong>
-        <i class="fa fa-thumbs-o-down fa-lg fa-fw" aria-hidden="true"></i><strong>198</strong>
-		<i class="fa fa-commenting-o" aria-hidden="true"></i><strong>156</strong></a></p> -->
-			</p>
-	</div>
-   </div>
-  </div>
-
-        <h6>
-            <li>In a Dutch oven, cook sausage</li>
-            <li>ground beef, onion, and garlic over medium heat until well browned.</li>
-            <li>   Stir in crushed tomatoes, tomato paste, tomato sauce, and water.</li>
-            <li> Season with sugar, basil, fennel seeds, Italian seasoning, 1 tablespoon salt, pepper, and 2 tablespoons parsley.</li>
-            <li> Simmer, covered, for about 1 1/2 hours, stirring occasionally.</li>
-            <li>Bring a large pot of lightly salted water to a boil.</li>
-            <li> Cook lasagna noodles in boiling water for 8 to 10 minutes.</li>
-            <li>Drain noodles, and rinse with cold water.</li>
-            <li>In a mixing bowl, combine ricotta cheese with egg, remaining parsley, and 1/2 teaspoon salt.</li>
-            <li>Preheat oven to 375 degrees F (190 degrees C).</li>
-            <li>To assemble, spread 1 1/2 cups of meat sauce in the bottom of a 9x13 inch baking dish.</li>
-           <li>Arrange 6 noodles lengthwise over meat sauce. Spread with one half of the ricotta cheese mixture.</li>
-           <li>  Top with a third of mozzarella cheese slices.</li>
-           <li> Spoon 1 1/2 cups meat sauce over mozzarella, and sprinkle with 1/4 cup Parmesan cheese.</li>
-           <li> Repeat layers, and top with remaining mozzarella and Parmesan cheese.</li>
-           <li>Cover with foil: to prevent sticking, either spray foil with cooking spray, or make sure the foil does not touch the cheese.</li>  
-</h6>
-      </div>
-      <div class="modal-footer">
-        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button> -->
-                 <!-- <a href="#" class="btn btn-outline-danger"><strong>add to my favorite</strong></a> -->
-                 <a href="#" class="btn btn-outline-danger"><strong>add to my favorite</strong></a> 
-      </div>
+      </form>
     </div>
   </div>
 </div>
-      </p>
-<!--continuation of external card  -->
-		<a href="ProfilePage.html" role="button"><strong><h6>@chefsteve</h6></strong></a>
-         <!-- <a href="#" class="btn btn-outline-danger"><strong>add to my favorite</strong></a>  -->
-        <a href="#" class="btn btn-outline-danger"><strong>add to my favorite</strong></a>  
-		<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    <div class="card-footer">
- 		<p><a class="btn-floating">
-        <i class="fa fa-thumbs-o-up fa-lg fa-fw" aria-hidden="true"></i><strong>158</strong>
-        <i class="fa fa-thumbs-o-down fa-lg fa-fw" aria-hidden="true"></i><strong>198</strong>
-		<i class="fa fa-commenting-o" aria-hidden="true"></i><strong>156</strong></a></p>
-			</p>
-	</div>
-   </div>
+<section id="top-recipes">
+  <div>
+    <h3 class="center-align">Popular Recipes</h3>
   </div>
-<!--...................................................................................  -->
 
-
-  <div class="card">
-	<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-		<img class="img-fluid" src="images/frenchMeal4.jpg" alt="Card image cap" width="537.5">
-    <div class="card-block">
-      <h4 class="card-title">French Recipes</h4>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-		<a href="ProfilePage.html" role="button"><strong><h6>@chefsteve</h6></strong></a>
-	  <a href="#" class="btn btn-outline-danger"><strong>add to my favorite</strong></a>
- 	  <p class="card-text"><small class="text-muted">Last updated 35 mins ago</small></p>
-	  <div class="card-footer">
- 		<p><a class="btn-floating">
-        <i class="fa fa-thumbs-o-up fa-lg fa-fw" aria-hidden="true"></i><strong>158</strong>
-        <i class="fa fa-thumbs-o-down fa-lg fa-fw" aria-hidden="true"></i><strong>198</strong>
-		<i class="fa fa-commenting-o" aria-hidden="true"></i><strong>156</strong></a></p>
-			</p>
-	  </div>
-    </div>
-  </div>
-</div> 
-
+  <!-- <div class="container"> -->
+   
 <div class="card-deck">
-  <div class="card">
-	<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-	    <img class="img-fluid" src="images/vegetablesoup.jpg" alt="Card image cap" width="537.5">
-          <div class="card-block">
-            <h4 class="card-title">Nigerian Recipes</h4>
-           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-			<a href="ProfilePage.html" role="button"><strong><h6>@chefsteve</h6></strong></a> 
-		   <a href="#" class="btn btn-outline-danger"><strong>add to my favorite</strong></a>
-	       <p class="card-text"><small class="text-muted">Last updated 4 mins ago</small></p>
-	      <div class="card-footer">
- 		 <p><a class="btn-floating">
-        <i class="fa fa-thumbs-o-up fa-lg fa-fw" aria-hidden="true"></i><strong>158</strong>
-        <i class="fa fa-thumbs-o-down fa-lg fa-fw" aria-hidden="true"></i><strong>198</strong>
-		<i class="fa fa-commenting-o" aria-hidden="true"></i><strong>156</strong></a></p>
-	</div>
-    </div>
-  </div>
-<!--.........................................................  -->
-  <div class="card">
-	<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-	  <img class="img-fluid" src="images/lasagna.jpg" alt="Card image cap" width="537.5">
- <div class="card-block">
-		<h4 class="card-title">Italian Recipes</h4>
-        <p class="card-text">For a casual holiday meal, you can't go wrong with this rich and meaty lasagna. My grown sons and daughter-in-law request it for their birthdays, too. </p>
-        
-
-<!-- Button trigger modal -->
-<!-- <a class="text btn-outline-secondary" data-toggle="modal" data-target="#exampleModalLong"> read more</a> -->
- 
-
- <!-- <a href="exampleModalLong" role="button"><strong><h6>read more</h6></strong></a>  -->
-	<a href="#" data-toggle="modal" data-target="#exampleModalLong"><strong><h6>read more</h6></strong></a> 
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-            <!--  -->
 <div class="card">
-	<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-	  <img class="img-fluid" src="images/lasagna.jpg" alt="Card image cap" width="537.5">
- <div class="card-block">
-		<h4 class="card-title">Italian Recipes</h4>
-		<p class="card-text">For a casual holiday meal, you can't go wrong with this rich and meaty lasagna. My grown sons and daughter-in-law request it for their birthdays, too. </p>
-		<a href="ProfilePage.html" role="button"><strong><h6>@chefsteve</h6></strong></a>
-		<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-    <div class="card-footer">
- 		<!-- <p><a class="btn-floating">
-        <i class="fa fa-thumbs-o-up fa-lg fa-fw" aria-hidden="true"></i><strong>158</strong>
-        <i class="fa fa-thumbs-o-down fa-lg fa-fw" aria-hidden="true"></i><strong>198</strong>
-		<i class="fa fa-commenting-o" aria-hidden="true"></i><strong>156</strong></a></p> -->
-			</p>
-	</div>
-   </div>
-  </div>
-
-        <h6>
-            <li>In a Dutch oven, cook sausage</li>
-            <li>ground beef, onion, and garlic over medium heat until well browned.</li>
-            <li>   Stir in crushed tomatoes, tomato paste, tomato sauce, and water.</li>
-            <li> Season with sugar, basil, fennel seeds, Italian seasoning, 1 tablespoon salt, pepper, and 2 tablespoons parsley.</li>
-            <li> Simmer, covered, for about 1 1/2 hours, stirring occasionally.</li>
-            <li>Bring a large pot of lightly salted water to a boil.</li>
-            <li> Cook lasagna noodles in boiling water for 8 to 10 minutes.</li>
-            <li>Drain noodles, and rinse with cold water.</li>
-            <li>In a mixing bowl, combine ricotta cheese with egg, remaining parsley, and 1/2 teaspoon salt.</li>
-            <li>Preheat oven to 375 degrees F (190 degrees C).</li>
-            <li>To assemble, spread 1 1/2 cups of meat sauce in the bottom of a 9x13 inch baking dish.</li>
-           <li>Arrange 6 noodles lengthwise over meat sauce. Spread with one half of the ricotta cheese mixture.</li>
-           <li>  Top with a third of mozzarella cheese slices.</li>
-           <li> Spoon 1 1/2 cups meat sauce over mozzarella, and sprinkle with 1/4 cup Parmesan cheese.</li>
-           <li> Repeat layers, and top with remaining mozzarella and Parmesan cheese.</li>
-           <li>Cover with foil: to prevent sticking, either spray foil with cooking spray, or make sure the foil does not touch the cheese.</li>  
-</h6>
-      </div>
-      <div class="modal-footer">
-        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button> -->
-        		 <a href="#" class="btn btn-outline-danger"><strong>add to my favorite</strong></a>  
-        		<a href="#" class="btn btn-outline-danger"><strong>add to my favorite</strong></a> 
-
-      </div>
-    </div>
+<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+    <img class="img-fluid" src="images/vegetablesoup.jpg" alt="Card image cap" width="537.5">
+        <div class="card-block">
+          <h4 class="card-title">vegetable soup</h4>
+         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+     <a   class="btn btn-outline-danger" href="recipeCatalog.html"><strong>EXPLORE</strong></a>
+    <!-- <a href="ProfilePage.html" role="button"><strong><h6>@chefsteve</h6><strong></a>  -->
+     <p class="card-text"><small class="text-muted">Last updated 4 mins ago</small></p>
+    <a href="ProfilePage.html" role="button"><strong><h6>@mr_shrek</h6></strong></a>
+      <div class="card-footer">
+    <p><a class="btn-floating"> 
+    <i class="fa fa-thumbs-o-up fa-lg fa-fw" aria-hidden="true"></i><strong>158</strong>
+          <i class="fa fa-thumbs-o-down fa-lg fa-fw" aria-hidden="true"></i><strong>198</strong>
+    <i class="fa fa-commenting-o" aria-hidden="true"></i><strong>156</strong></a></p>
+</div>
   </div>
 </div>
-      </p>
 
-		<a href="ProfilePage.html" role="button"><strong><h6>@chefsteve</h6></strong></a>
-		<a href="#" class="btn btn-outline-danger"><strong>add to my favorite</strong></a> 
-		<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    <div class="card-footer">
- 		<p><a class="btn-floating">
-        <i class="fa fa-thumbs-o-up fa-lg fa-fw" aria-hidden="true"></i><strong>158</strong>
-        <i class="fa fa-thumbs-o-down fa-lg fa-fw" aria-hidden="true"></i><strong>198</strong>
-		<i class="fa fa-commenting-o" aria-hidden="true"></i><strong>156</strong></a></p>
-			</p>
-	</div>
-   </div>
-  </div>
-<!--...................................................................................  -->
-
-  <!-- <div class="card"> -->
-	<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-		<!-- <img class="img-fluid" src="images/frenchMeal4.jpg" alt="Card image cap" width="537.5">
+<div class="card">
+<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+  <img class="img-fluid" src="images/lasagna.jpg" alt="Card image cap" width="537.5">
+<div class="card-block">
+  <h4 class="card-title">lasagna</h4>
+  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+  <a   class="btn btn-outline-danger" href="recipeCatalog.html"><strong>EXPLORE</strong></a> 
+  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <a href="ProfilePage.html" role="button"><strong><h6>@chefsteve</h6></strong></a>  
+  <div class="card-footer">
+   <p><a class="btn-floating">
+  <!-- <a href="ProfilePage.html" role="button"><strong><h6>@chefsteve</h6><strong></a> -->
+      <i class="fa fa-thumbs-o-up fa-lg fa-fw" aria-hidden="true"></i><strong>158</strong>
+      <i class="fa fa-thumbs-o-down fa-lg fa-fw" aria-hidden="true"></i><strong>198</strong>
+  <i class="fa fa-commenting-o" aria-hidden="true"></i><strong>156</strong></a></p>
+    </p>
+</div>
+ </div>
+</div>
+ 
+<div class="card">
+    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+      <img class="img-fluid" src="images/lasagna.jpg" alt="Card image cap" width="537.5">
     <div class="card-block">
-      <h4 class="card-title">French Recipes</h4>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to 
-          additional content. This card has even longer content than the first to show that equal 
-          height action.<a href="ProfilePage.html" role="button"><strong><h6>@chefsteve</h6></strong></a> 
-      <a href="#" class="btn btn-outline-danger"><strong>add to my favorite</strong></a> 
- 	  <p class="card-text"><small class="text-muted">Last updated 35 mins ago</small></p>
-	  <div class="card-footer">
- 		<p><a class="btn-floating">
-        <i class="fa fa-thumbs-o-up fa-lg fa-fw" aria-hidden="true"></i><strong>158</strong>
-        <i class="fa fa-thumbs-o-down fa-lg fa-fw" aria-hidden="true"></i><strong>198</strong>
-		<i class="fa fa-commenting-o" aria-hidden="true"></i><strong>156</strong></a></p>
-			</p>
-	  </div>
+      <h4 class="card-title">lasagna</h4>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <a   class="btn btn-outline-danger" href="recipeCatalog.html"><strong>EXPLORE</strong></a> 
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <a href="ProfilePage.html" role="button"><strong><h6>@chefsteve</h6></strong></a>  
+      <div class="card-footer">
+       <p><a class="btn-floating">
+      <!-- <a href="ProfilePage.html" role="button"><strong><h6>@chefsteve</h6><strong></a> -->
+          <i class="fa fa-thumbs-o-up fa-lg fa-fw" aria-hidden="true"></i><strong>158</strong>
+          <i class="fa fa-thumbs-o-down fa-lg fa-fw" aria-hidden="true"></i><strong>198</strong>
+      <i class="fa fa-commenting-o" aria-hidden="true"></i><strong>156</strong></a></p>
+        </p>
     </div>
-  </div>
-</div>  -->
-
-<!--.........................................................  -->
-  <div class="card">
-	<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-	  <img class="img-fluid" src="images/lasagna.jpg" alt="Card image cap" width="537.5">
- <div class="card-block">
-		<h4 class="card-title">Italian Recipes</h4>
-        <p class="card-text">For a casual holiday meal, you can't go wrong with this rich and meaty lasagna. My grown sons and daughter-in-law request it for their birthdays, too. </p>
-        
-
-<!-- Button trigger modal -->
-<!-- <a class="text btn-outline-secondary" data-toggle="modal" data-target="#exampleModalLong"> read more</a> -->
+     </div>
+    </div>
  
 
- <!-- <a href="exampleModalLong" role="button"><strong><h6>read more</h6></strong></a>  -->
-	<a href="#" data-toggle="modal" data-target="#exampleModalLong"><strong><h6>read more</h6></strong></a> 
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-            <!--  -->
-<div class="card">
-	<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-	  <img class="img-fluid" src="images/lasagna.jpg" alt="Card image cap" width="537.5">
- <div class="card-block">
-		<h4 class="card-title">Italian Recipes</h4>
-		<p class="card-text">For a casual holiday meal, you can't go wrong with this rich and meaty lasagna. My grown sons and daughter-in-law request it for their birthdays, too. </p>
-		<a href="ProfilePage.html" role="button"><strong><h6>@chefsteve</h6></strong></a>
-		<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-    <div class="card-footer">
- 		<!-- <p><a class="btn-floating">
-        <i class="fa fa-thumbs-o-up fa-lg fa-fw" aria-hidden="true"></i><strong>158</strong>
-        <i class="fa fa-thumbs-o-down fa-lg fa-fw" aria-hidden="true"></i><strong>198</strong>
-		<i class="fa fa-commenting-o" aria-hidden="true"></i><strong>156</strong></a></p> -->
-			</p>
-	</div>
-   </div>
-  </div>
-
-        <h6>
-            <li>In a Dutch oven, cook sausage</li>
-            <li>ground beef, onion, and garlic over medium heat until well browned.</li>
-            <li>   Stir in crushed tomatoes, tomato paste, tomato sauce, and water.</li>
-            <li> Season with sugar, basil, fennel seeds, Italian seasoning, 1 tablespoon salt, pepper, and 2 tablespoons parsley.</li>
-            <li> Simmer, covered, for about 1 1/2 hours, stirring occasionally.</li>
-            <li>Bring a large pot of lightly salted water to a boil.</li>
-            <li> Cook lasagna noodles in boiling water for 8 to 10 minutes.</li>
-            <li>Drain noodles, and rinse with cold water.</li>
-            <li>In a mixing bowl, combine ricotta cheese with egg, remaining parsley, and 1/2 teaspoon salt.</li>
-            <li>Preheat oven to 375 degrees F (190 degrees C).</li>
-            <li>To assemble, spread 1 1/2 cups of meat sauce in the bottom of a 9x13 inch baking dish.</li>
-           <li>Arrange 6 noodles lengthwise over meat sauce. Spread with one half of the ricotta cheese mixture.</li>
-           <li>  Top with a third of mozzarella cheese slices.</li>
-           <li> Spoon 1 1/2 cups meat sauce over mozzarella, and sprinkle with 1/4 cup Parmesan cheese.</li>
-           <li> Repeat layers, and top with remaining mozzarella and Parmesan cheese.</li>
-           <li>Cover with foil: to prevent sticking, either spray foil with cooking spray, or make sure the foil does not touch the cheese.</li>  
-</h6>
-      </div>
-      <div class="modal-footer">
-        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button> -->
-                 <!-- <a href="#" class="btn btn-outline-danger"><strong>add to my favorite</strong></a> -->
-                 <a href="#" class="btn btn-outline-danger"><strong>add to my favorite</strong></a> 
-      </div>
-    </div>
-  </div>
-</div>
-      </p>
-<!--continuation of external card  -->
-		<a href="ProfilePage.html" role="button"><strong><h6>@chefsteve</h6></strong></a>
-         <!-- <a href="#" class="btn btn-outline-danger"><strong>add to my favorite</strong></a>  -->
-        <a href="#" class="btn btn-outline-danger"><strong>add to my favorite</strong></a>  
-		<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    <div class="card-footer">
- 		<p><a class="btn-floating">
-        <i class="fa fa-thumbs-o-up fa-lg fa-fw" aria-hidden="true"></i><strong>158</strong>
-        <i class="fa fa-thumbs-o-down fa-lg fa-fw" aria-hidden="true"></i><strong>198</strong>
-		<i class="fa fa-commenting-o" aria-hidden="true"></i><strong>156</strong></a></p>
-			</p>
-	</div>
-   </div>
-  </div>
-<!--...................................................................................  -->
-
-  
-				                 <!--footer  -->
-	          <hr> 
-         <footer class="bg-color footer2">
-            <div class="container">
-                <div class="row">
-                  <div class="col text-center text-black">
-                      <p>Designed by: Douglas &nbsp;&nbsp;&nbsp; © 2017</p>
-                    </div>
+                       <!--footer  -->
+          <hr> 
+       <footer class="bg-color footer2">
+          <div class="container">
+              <div class="row">
+                <div class="col text-center text-black">
+                    <p>Designed by: Douglas &nbsp;&nbsp;&nbsp; © 2017</p>
                   </div>
                 </div>
-			</footer>
-			
+              </div>
+    </footer>
+    
 
 
- 
-		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-	    <script type="text/javascript" src="js/designs.js"></script>
+<!-- the modal for login -->
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+      <div class="modal-dialog">
+      <div class="loginmodal-container">
+        <form>
+            <nav class="navbar navbar-inverse bg-danger">
+<div class="form-actions"> 
+   <h4>Login to Your Account</h4> 
+   <!-- <h4 class="display-3">Welcome To More-Recipes</h4>   -->
+  </div>
+</nav>
+<br>
+<br>
+        <input type="text" name="user" placeholder="Username">
+        <input type="password" name="pass" placeholder="Password">
+        <!-- <input type="submit" name="login" class="login loginmodal-submit" value="Login"> -->
+        <a class="btn btn-danger btn-block" href="authenticatedUserPage.html" role="button"><strong>submit<strong></a>
+                  
+        </form>
+        
+        <div class="login-help text-center test-danger">
+         <!-- <a href="#">Forgot Password</a> -->
+        <a href="#" data-toggle="modal"  data-target="#forgot-modal">forgot password?</a> 
 
-	  	
-	</body>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+       <!--the forgot password modal  -->
+      <div class="modal fade" id="forgot-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+      <div class="modal-dialog">
+      <div class="loginmodal-container">
+        <form>
+            <nav class="navbar navbar-inverse bg-danger">
+<div class="form-actions">
+  <h4>enter recovery email</h4>
+  </div>
+</nav>
+<br>
+<br>
+        <form>
+        <input type="email" name="user" placeholder="recoveryemail@email.com">
+            <button type="submit" class="btn btn-danger btn-block" href="#" data-toggle="modal" data-target="#signUp-modal"><strong>submit<strong></a></button> 
+        </form>
+      </div>
+      </div>
+    </div>
+
+    <!--the modal for signUp  -->
+         <div class="modal fade" id="signUp-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+      <div class="modal-dialog">
+      <div class="loginmodal-container">
+        <form>
+            <nav class="navbar navbar-inverse bg-danger">
+<div class="form-actions">
+  <h4>Signup Here</h4>
+  </div>
+</nav>
+<br>
+<br>
+        <form>
+        <input type="text" name="user" placeholder="Username">
+        <input type="email" name="user" placeholder="email">
+        <input type="number" name="user" placeholder="phone number">
+        <input type="password" name="pass" placeholder="Password">
+        <input type="password" name="pass" placeholder="confirm password">
+        <!-- <input type="submit" name="login" class="login loginmodal-submit" value="Login"> -->
+        <!-- <ul> -->
+        <a class="btn btn-danger btn-block" href="authenticatedUserPage.html" role="button"><strong>submit<strong></a>
+                    <!-- </ul> -->
+        </div>
+      </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/designs.js"></script>
+
+    
+</body>
 </html> 
