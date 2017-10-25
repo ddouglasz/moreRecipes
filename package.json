@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ddouglasz/moreRecipes/issues"
   },
-  "homepage": "https://github.com/ddouglasz/moreRecipes#readme"
+  "homepage": "https://github.com/ddouglasz/moreRecipes#readme",
+  "devDependencies": {
+    "eslint": "^4.9.0"
+  }
 }
