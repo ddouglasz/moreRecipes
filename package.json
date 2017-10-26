@@ -1,0 +1,36 @@
+{
+  "name": "moreRecipes",
+  "version": "1.0.0",
+  "description": "An Andela bootcamp web app project for food recipes and reviews",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "eslint": "^4.9.0",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.12.1",
+    "pg": "^7.3.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "scripts": {
+    "start:dev": "nodemon ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddouglasz/moreRecipes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ddouglasz/moreRecipes/issues"
+  },
+  "homepage": "https://github.com/ddouglasz/moreRecipes#readme"
+}
