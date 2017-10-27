@@ -15,28 +15,42 @@
 </li> 
 </ul> -->
 <nav class="navbar navbar-toggleable-md navbar-light bg-danger">
+    <ul class="navbar-nav mr-auto">
+<!-- <li class="nav-item">
+<a class="navbar-brand" href="index.html"><img src="images/moreRecipeLogo.jpg"></a>
+</li>  -->
+<div class=btn-left>
+</ul>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+  <ul class="nav-item active">
+      <a class="btn btn-danger" href="index.html" role="button">home</a>
+  </ul>  
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <a class="btn btn-danger" href="index.html" role="button">home</a>
-        <a class="btn btn-danger" href="recipeCatalog.html" role="button">recipes catalog</a>
-      <li class="nav-item active">
+      <ul class="nav-item active">
+          <a class="btn btn-danger" href="recipeCatalog.html" role="button"> catalog</a>
+      </ul>
+      <ul class="nav-item active">
           <a class="btn btn-danger" href="manageMyRecipes.html" role="button"> manage recipes</a>
-      </li>
-      <li class="nav-item">
-          <a class="btn btn-danger" href="profilePage.html" role="button">profile</a>
-      </li>
-      <li class="nav-item3">
-         <a class="btn btn-danger" href="index.html" role="button"> log out</a>
-      </li>
-    </ul>
-     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form> 
+      </ul>           
+      <ul class="nav-item active">
+          <a class="btn btn-danger" href="profilePage.html.html" role="button">profile</a>
+      </ul>  
+      <ul class="nav-item active">
+          <a class="btn btn-danger" href="indexPage.html" role="button">home</a>
+      </ul>  
+       
+           <div class="btn-l"float:right>
+        <ul class="navbar-nav flex-end justify-content-end">
+            <ul class="nav-item ">
+                <a class="btn btn-danger" href="index.html" role="button">logout</a>
+            </ul>
+          </div>
+            </ul>
+           </ul>
+    </div>  
+  </ul>
   </div>
 </nav>
 </div>
@@ -68,7 +82,7 @@
       <!-- left column -->
       <div class="col-md-3">
         <div class="text-center">
-          <img src="images/chefchef.png" class="img-rounded" alt="chefchef">
+          <img src="images/chefchef.jpg" class="img-rounded" alt="chefchef">
           <h6>Upload a different photo...</h6>
           <input type="file" class="form-control">
         </div>
