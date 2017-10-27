@@ -31,6 +31,9 @@
     background-color: transparent;
     text-align: center;
 }
+.btn-l{
+  margin-right:6px;
+}
 
 .navbar-brand-brand{
    font-size: 150px;
@@ -302,7 +305,7 @@ width:100%;
   color:white;  
   /* color: black; */
   text-shadow: 0 1px rgba(0,0,0,0.1); 
-  background-color #660000;
+  background-color: #660000;
   padding: 17px 0px;
   /* width:100% */
   /* font-family: roboto; */
@@ -411,7 +414,7 @@ width:100%;
   border: 0px;
   color: black;
   text-shadow: 0 1px rgba(0,0,0,0.6); 
-  background-color #660000;
+  background-color: #660000;
   padding: 17px 0px;
    font-family: roboto; 
   font-size: 14px;
@@ -422,7 +425,7 @@ width:100%;
   /* border: 1px solid #2f5bb7; */
   border: 0px;
   /* text-shadow: 0 1px rgba(0,0,0,0.9); */
-  background-color #660000
+  background-color: #660000
   /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
 }
 
@@ -507,7 +510,7 @@ width:100%;
   border: 0px;
   color: black;
   text-shadow: 0 1px rgba(0,0,0,0.1); 
-  background-color #660000;
+  background-color: #660000;
   padding: 17px 0px;
    font-family: roboto; 
   font-size: 14px;
@@ -518,7 +521,7 @@ width:100%;
   /* border: 1px solid #2f5bb7; */
   border: 0px;
   /* text-shadow: 0 1px rgba(0,0,0,0.3); */
-  color #660000
+  color :#660000
   /* background-color:orang #660000 */
   /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
 }
