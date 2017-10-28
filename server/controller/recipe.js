@@ -1,5 +1,4 @@
-
-import recipes from '../model/DummyDb';
+import recipes from '../model/recipe';
 /**
  * @class recipe
  */
@@ -103,21 +102,4 @@ class Recipe {
     });
   }
 }
-
 export default Recipe;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
