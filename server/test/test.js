@@ -25,10 +25,7 @@ chai.use(chaiHttp);
   });
 // });
 
-import request from 'supertest';
-import { assert } from 'chai';
-import app from '../../index';
-
+ 
 describe('GET /api/recipes', () => {
   it('should return status code 200', (done) => {
     request(app)
