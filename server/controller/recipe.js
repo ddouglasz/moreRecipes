@@ -2,7 +2,7 @@ import recipes from '../model/recipe';
 /**
  * @class recipe
  */
-class Recipe {
+class Recipes {
   /**
    * @returns {Object} recipes
    * @param {*} req
@@ -32,6 +32,7 @@ class Recipe {
       directions: req.bodydirections,
     });
     return res.json({
+      recipes,
       message: 'success',
       error: false
     });
@@ -102,4 +103,4 @@ class Recipe {
     });
   }
 }
-export default Recipe;
+export default Recipes;

@@ -7,10 +7,9 @@ const app = express();
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-routes(app);
 
 app.get('/', (req, res) => res.status(200).send({
-  message: 'Welcome to More-Recipes'
+  message: 'Welcome to more-Recipes.',
 }));
 
-export default app;
+module.exports = app;

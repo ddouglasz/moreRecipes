@@ -12,8 +12,8 @@ const recipes = [
     reviews: [],
     ingredients: ['greens', 'pepper', 'salt'],
     directions: ['wash', 'cut', 'Cook', 'serve'],
-    },
-    {
+  },
+  {
     id: 1,
     name: 'fried rice',
     upvotes: 7836,
@@ -25,8 +25,8 @@ const recipes = [
     reviews: [],
     ingredients: ['rice', 'pepper', 'salt'],
     directions: ['wash', 'sieve', 'Cook', 'serve'],
-    }
-  ];
+  }
+];
 
 export default recipes;
 
