@@ -3,14 +3,13 @@
 // const app = require('./server/app'); // The express app we just created
 
 import * as http from 'http';
-
 import app from '../../app';
 
 const port = parseInt(process.env.PORT, 10) || 8000;
 app.set('port', port);
 
 const server = http.createServer(app);
-
 server.listen(port);
 
-console.log('we are up on port 8000');
+console.log(`we are up on port ${port}`);
+// console.log(`server is up @ '${port}`);

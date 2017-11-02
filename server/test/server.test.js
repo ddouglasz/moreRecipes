@@ -1,34 +1,34 @@
 import chai from 'chai';
 import chaiHttp from 'chai-http';
-import index from '../models/recipes';
+import recipes from '../model/recipes';
 import server from '../bin/www';
 
 const should = chai.should();
 chai.use(chaiHttp);
 // describe('MoreRecipes Tests:', () => {
-  describe('recipeController', () => {
-    it('should return status code of 200 when recipe is added successfully', (done) => {
-      chai.request(server)
-        .post('/api/recipes')
-        .send({
-          id: 1,
-          recipeName: 'vanilla ',
-          type: ' icecream',
-          ingredients: 'sugar'
-        })
-        .end((err, res) => {
-          res.should.have.status(400);
-          res.body.should.be.a('object');
-          done();
-        });
-    });
+describe('recipeController', () => {
+  it('should return status code of 200 when recipe is added successfully', (done) => {
+    chai.request(server)
+      .post('/api/recipes')
+      .send({
+        id: 1,
+        recipeName: 'vanilla ',
+        type: ' icecream',
+        ingredients: 'sugar'
+      })
+      .end((err, res) => {
+        res.should.have.status(400);
+        res.body.should.be.a('object');
+        done();
+      });
   });
+});
 // });
 
  
 describe('GET /api/recipes', () => {
   it('should return status code 200', (done) => {
-    request(app)
+    chai.request(app)
       .get('/api/v1/recipes')
       .expect('content-Type', /json/)
       .expect(200)
