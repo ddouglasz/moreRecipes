@@ -158,9 +158,9 @@ font-family:"comic sans MS", cursive, sans-serif
 }
 
 
-.loginform{
+/* .loginform{
  padding-top: 20px;
-}
+} */
 
 .container{  
   width:100%;
@@ -195,13 +195,18 @@ position:border-top;
     }
 
     .home-wrapper {
-      background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../images/roastedFish.jpg" );
+      background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url("../images/roastedFish.jpg" );
      /* background-image: url("../images/roastedFish.jpg");  */
-    height: 300px;
-    width:auto;
+    /* height: 300px; */
+    /* width:auto; */
     color: white;
     font-weight: bold;
     text-align: center;
+    /* min-height:260px; */
+    /* height:auto; */
+    max-width:100%;
+    /* width:100%; */
+    height:auto;
     
 } 
   .card-deck{
@@ -212,14 +217,7 @@ position:border-top;
 .display-3 {
     font-size: 30px;
 }
-.home-wrapper {
-min-height:260px;
-height:auto;
-}
-.home-wrapper img {
-width:100%;
-}
-/* .nav-item3{ */
+ /* .nav-item3{ */
   /* float:left!important; */
    /* margin-left:80%!important; */
    /* margin-top:auto!important */
@@ -558,3 +556,6 @@ height:100%;
 width:100%
 } */
 
+.btn-1{
+  margin-right:6px
+}

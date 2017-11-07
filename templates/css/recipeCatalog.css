@@ -192,13 +192,16 @@ position:border-top;
     }
 
     .home-wrapper {
-      background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../images/roastedFish.jpg" );
+      background: linear-gradient(rgba(10, 10, 10, 0.3), rgba(10, 1, 1, 0.3)), url("../images/roastedFish.jpg" );
      /* background-image: url("../images/roastedFish.jpg");  */
     height: 300px;
     width:auto;
     color: white;
     font-weight: bold;
     text-align: center;
+    min-height:260px;
+    /* height:auto; */
+    /* width:auto; */
     
 } 
   .card-deck{
@@ -209,13 +212,7 @@ position:border-top;
 .display-3 {
     font-size: 30px;
 }
-.home-wrapper {
-min-height:260px;
-height:auto;
-}
-.home-wrapper img {
-width:100%;
-}
+ 
 .nav-item3{
   /* float:left!important; */
    margin-left:80%!important;
