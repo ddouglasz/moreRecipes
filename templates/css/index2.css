@@ -1,36 +1,14 @@
-/* .home-wrapper {
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../images/mexican-salad-2.jpg" );
-   background-image: url("../images/roastedFish.jpg"); 
-  height: 300px;
-  width:auto;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-}  */
+ 
 .display-3{
     color:white;
     font-family:"comic sans MS", cursive, sans-serif
-  } 
-  .home-wrapper {
-    /* background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)); */
-    background-image: url("../images/mexican-salad-2.jpg");
-  height: 300px; 
-   width:auto; 
-  color: white;
-  font-weight: bold;
-  text-align: center;
-   /* min-height:260px;  */
-   height:auto; 
-  max-width:100%;
-    /* width:100%;   */
-  /* height:auto; */
-  }
-  .flex-end{
-     margin-left:80%;
-  }
-  .img-fluid {
-    max-width: 100%;
-    /* height: 100px; */
+  }  
+  .jumbotron {
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../images/mexican-salad-2.jpg");
+    background-size: cover;
+    height: 100%;
+    color: white;
+    text-align: center;
 }
 .my-2 {
     margin-top: .5rem!important;
@@ -46,3 +24,45 @@ a:hover{
     background-color: transparent;
     text-align: center;
 }
+   
+.input-group input[type=text]{
+    background: transparent;
+    -webkit-text-fill-color: white;
+}
+.input-group input[type=text], input[type=password]:hover, input[type=btn]:hover {
+    border: 1px solid white;
+    border-top: 1px solid white;
+      /* background-color #660000;  */
+    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  }
+  
+ nav.navbar {
+    /* background: transparent; */
+    border: 0;
+    overflow: hidden;
+    background-color:#cc0000;
+    /* position: fixed; Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+} 
+.navbar-brand{
+    color:white!important;
+    font-family:"comic sans MS", cursive, sans-serif;
+}
+.form-inline a{
+    color:white;
+}
+ .btn{
+     background-color:#cc0000;
+     color:white;
+ }
+ .footer2{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: #cc0000;
+    color: white;
+    padding: 10px 10px 0px 30px;
+  }
