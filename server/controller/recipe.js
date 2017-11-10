@@ -33,7 +33,7 @@ class Recipes {
     });
     return res.json({
       recipes,
-      message: 'success',
+      message: 'new recipe  created successfully',
       error: false
     });
   }
@@ -52,7 +52,7 @@ class Recipes {
         recipes[i].directions = req.body.directions;
         return res.json({
           recipes,
-          message: 'success',
+          message: 'recipe updated successfully',
           error: false
         });
       }
@@ -72,7 +72,7 @@ class Recipes {
       if (recipes[i].id === parseInt(req.params.recipeId, 10)) {
         recipes.splice(i, 1);
         return res.json({
-          message: 'success',
+          message: 'recipe removed successfully',
           error: false
         });
       }

@@ -11,5 +11,4 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/', (req, res) => res.status(200).send({
   message: 'Welcome to more-Recipes.',
 }));
-
 module.exports = app;

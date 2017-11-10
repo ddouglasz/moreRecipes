@@ -1,7 +1,5 @@
 import Recipes from '../controller/recipe';
-import recipes from '../model/recipe';
-// var recipes = require ('../model/recipe');
-
+import recipes from '../model/recipe'; // eslint-disable-line no-unused-vars
 // export default (app) => {
 //   app.get('/api/v1/recipes', Recipes.getRecipe);
 //   app.post('/api/v1/recipes', Recipes.createRecipes);
@@ -9,7 +7,7 @@ import recipes from '../model/recipe';
 //   app.delete('/api/v1/recipes/:recipeId', Recipes.removeRecipes);
 //   app.get('/api/v1/recipes/:recipeId', Recipes.retrieveRecipes);
 //   app.post('api/v1/recipes/:recipeId', Recipes.upVoteRecipes);
-//   app.post('api/v1/recipes/:recipeId', Recipes.downVoteRecipes); 
+//   app.post('api/v1/recipes/:recipeId', Recipes.downVoteRecipes);
 //   app.post('/api/v1/recipes/:recipeId', Recipes.reviewRecipes);
 // };
 
