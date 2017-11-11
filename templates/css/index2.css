@@ -7,6 +7,7 @@
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../images/mexican-salad-2.jpg");
     background-size: cover;
     height: 100%;
+    width:100%;
     color: white;
     text-align: center;
 }
@@ -59,10 +60,21 @@ a:hover{
      color:white;
  }
  .footer2{
-    position: fixed;
+    /* position: fixed; */
     bottom: 0px;
     width: 100%;
     background-color: #cc0000;
     color: white;
-    padding: 10px 10px 0px 30px;
+    padding: 10px 10px 10px 10px;
+    text-align:center;
   }
+  .card{
+    margin-top:50px;
+    margin-right:20px;
+    margin-bottom:50px;
+    margin-left:20px
+  }
+  .row{
+     margin-right:0px!important;
+    /* margin-left:10px; */
+  } 
