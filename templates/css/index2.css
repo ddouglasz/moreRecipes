@@ -48,6 +48,8 @@ a:hover{
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
 } 
+
+ 
 .navbar-brand{
     color:white!important;
     font-family:"comic sans MS", cursive, sans-serif;
