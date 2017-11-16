@@ -1,54 +1,41 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="css/authenticatedUser.css">
-  
+  <link rel="stylesheet" type="text/css" href="css/recipeCatalog.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body> 
-  
-<nav class="navbar navbar-toggleable-md navbar-light bg-danger">
-    <ul class="navbar-nav mr-auto">
-<!-- <li class="nav-item">
-<a class="navbar-brand" href="index.html"><img src="images/moreRecipeLogo.jpg"></a>
-</li>  -->
-<div class=btn-left>
-</ul>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <ul class="nav-item active">
-      <a class="btn btn-danger" href="index.html" role="button">home</a>
-  </ul>  
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <ul class="nav-item active">
-          <a class="btn btn-danger" href="recipeCatalog.html" role="button"> catalog</a>
-      </ul>
-      <ul class="nav-item active">
-          <a class="btn btn-danger" href="manageMyRecipes.html" role="button"> manage recipes</a>
-      </ul>           
-      <ul class="nav-item active">
-          <a class="btn btn-danger" href="profilePage.html.html" role="button">profile</a>
-      </ul>  
-      <ul class="nav-item active">
-          <a class="btn btn-danger" href="indexPage.html" role="button">home</a>
-      </ul>  
-       
-           <div class="btn-l"float:right>
-        <ul class="navbar-nav flex-end justify-content-end">
-            <ul class="nav-item ">
-                <a class="btn btn-danger" href="index.html" role="button">logout</a>
-            </ul>
-          </div>
-            </ul>
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded ">
+        <button class="navbar-toggler navbar-toggler-right"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" ></span>
+        </button>
+             <!-- <a class="navbar-brand" href="recipeCatalog.html"><img src="images/moreRecipeLogo.jpg"></a> -->
+             <a class="navbar-brand" href="index.html" >More-Recipes</a>
+             
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <a class="nav-link text" href="profilePage.html">profile</span></a>
+              <a class="nav-link text" href="manageMyrecipes.html">manage recipe</span></a>
+              <!-- <a class="nav-link text" href="signin.html">sign in</span></a> -->
+              
+              
+              
            </ul>
-    </div>  
-  </ul>
-  </div>
-</nav>
+          <form class="form-inline my-2 my-lg-0">
+              <a class="nav-link text" href="signin.html">sign in</span></a>
+           </form>
+          <form class="form-inline my-2 my-lg-0">
+               <a class="nav-link text" href="signup.html">sign up</span></a>
+             </form>
+             <form class="form-inline my-2 my-lg-0">
+                <a class="nav-link text" href="index.html">log out</span></a>
+              </form>
+        </div>
+      </nav>
 </div>
  		<!-- <a class="navbar-brand" href="index.html"><img src="images/moreRecipeLogo.jpg"></a> -->
  
@@ -78,7 +65,7 @@
       <!-- left column -->
       <div class="col-md-3">
         <div class="text-center">
-          <img src="images/chefchef.jpg" class="img-rounded" alt="chefchef">
+          <img src="images/profileGlyph.jpg" class="img-rounded" alt="chefchef">
           <h6>Upload a different photo...</h6>
           <input type="file" class="form-control">
         </div>
@@ -146,8 +133,6 @@
             <a class="btn btn-danger" href="profilePage.html" role="button"> save changes</a>
               <span></span>
               <input type="reset" class="btn btn-default" value="Cancel">
-
-
             </div>
           </div>
         </form>
@@ -156,16 +141,15 @@
 </div>
 <hr>
 <div>
+  <br><br>
        
-<footer class="bg-color footer2">
-            <div class="container">
-                <div class="row">
-                  <div class="col text-center text-black">
-                      <p>Designed by: Douglas &nbsp;&nbsp;&nbsp; © 2017</p>
-                    </div>
-                  </div>
-                </div>
-			</footer>
+  <footer class="bg-color footer2">
+    <div class="col  ">
+<p><div class ="author float-left">Designed by: Douglas &nbsp;&nbsp; © 2017</div>
+<a href="https://github.com/ddouglasz/moreRecipes "><i class="fa fa-github float-right text-white "  aria-hidden="true"><strong>&nbsp;github</strong></i></a>
+</div></button></p>
+  </div>
+</footer>
 			
 
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>

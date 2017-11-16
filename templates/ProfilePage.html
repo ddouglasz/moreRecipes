@@ -1,189 +1,101 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/profilePage.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/recipeCatalog.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <body>
-    <nav class="navbar navbar-toggleable-md navbar-light bg-danger">
-        <ul class="navbar-nav mr-auto">
-    <!-- <li class="nav-item">
-    <a class="navbar-brand" href="index.html"><img src="images/moreRecipeLogo.jpg"></a>
-    </li>  -->
-    <div class=btn-left>
-    </ul>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="nav-item active">
-              <a class="btn btn-danger" href="index.html" role="button">home</a>
-          </ul>  
-          <ul class="nav-item active">
-              <a class="btn btn-danger" href="recipeCatalog.html" role="button"> catalog</a>
-          </ul>
-          <ul class="nav-item active">
-              <a class="btn btn-danger" href="manageMyRecipes.html" role="button"> manage recipes</a>
-          </ul>           
-         
-               <div class="btn-l"float:right>
-            <ul class="navbar-nav flex-end justify-content-end">
-                <ul class="nav-item ">
-                    <a class="btn btn-danger" href="index.html" role="button">logout</a>
-                </ul>
-              </div>
-                </ul>
-               </ul>
-        </div>  
-      </ul>
-      </div>
-    </nav>
-    </div>
-     <br>
-      
-    <div class="row">
-        <div class="col-md-4">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded ">
+        <button class="navbar-toggler navbar-toggler-right"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" ></span>
+        </button>
+             <!-- <a class="navbar-brand" href="recipeCatalog.html"><img src="images/moreRecipeLogo.jpg"></a> -->
+             <a class="navbar-brand" href="index.html" >More-Recipes</a>
+             
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <a class="nav-link text" href="recipeCatalog.html">catalog</span></a>
+              <a class="nav-link text" href="manageMyrecipes.html">manage recipe</span></a>
+              <!-- <a class="nav-link text" href="signin.html">sign in</span></a> -->
+              
+              
+              
+           </ul>
+          <form class="form-inline my-2 my-lg-0">
+              <a class="nav-link text" href="signin.html">sign in</span></a>
+           </form>
+          <form class="form-inline my-2 my-lg-0">
+               <a class="nav-link text" href="signup.html">sign up</span></a>
+             </form>
+             <form class="form-inline my-2 my-lg-0">
+                <a class="nav-link text" href="index.html">log out</span></a>
+              </form>
         </div>
-        <div class="col-md-4">
-          <form>
-            <div class= "input-group">
-               
-              <input type="text" class="form-control" placeholder="Enter search input" aria-label="">
-              <span class="input-group-btn">
-                  <button class="btn btn-danger" type="button"><strong>Search</strong></button>
-              </span>
+      </nav>
+</div>
+  
+<div class="container">
+  <div class="form-actions">
+     </div>
+  	<hr>
+	<div class="row">
+       <div class="col-md-3">
+        <div class="text-center">
+          <img src="images/profileGlyph.jpg" class="img-rounded" alt="chefchef">
+         </div>
+      </div>
+  
+       <div class="col-md-9 personal-info">
+        <h3>Personal info</h3> 
+        
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label class="col-lg-3 control-label">First name: Douglas</label>
+             
           </div>
-          
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Last name: Egiemeh</label>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Company: steve's kitchen</label>
+            
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">birthday: 02/03</label>
+             
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Email: douglasegiemeh@gmail.com</label>
+             
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Username: @chefSteve</label>
+          </div>
+          <div class="form-group">
+               <a   class="btn btn-danger" href="authenticatedUserPage.html"><strong>edit profile</strong></a> 
+             </div>
+ 
+            </div>
+          </div>
         </form>
       </div>
-    </div>
-    </div>
-<div class="container">
-<br>
-<div class="form-actions">
-<h1>@chefsteve's Profile</h1>
-</div><br>
-
-    <div class="media">
-        <hr>
-        <div class="row">
-            <!-- left column -->
-            <div class="col-md-3">
-              <div class="text-center">
-                <img src="images/chefchef.jpg" class="img-rounded" alt="chefchef">
-                
-              </div>
-              
-            </div>
-            </div>
-            
-            <br>
-          <!-- <h5 class="mt-0">Media heading</h5> -->
-          <div class="col-sm-12 personal-info">
-              <ul><h5>username:     @chefsteve</h5></ul>
-              <ul><h5>first name:   steven</h5></ul>
-              <ul><h5>last name:    douglas</h5></ul>
-              <ul><h5>company:      steve's kitchen.ng</h5></ul>
-              <ul><h5>email:        steve@eteveskitchen.com</h5></ul>
-              <ul><h5>phone number: 09012345678</h5></ul>
-              <ul>
-            <a class="btn btn-danger" href="authenticatedUserPage.html" role="button">edit Profile</a>
-          </ul>        </div>
-      </div>
-
-
-      <!-- <div class="col-md-3">
-          <div class="text-center">
-            <img src="images/chefchef.jpg" class="img-rounded" alt="chefchef">
-            <h6>Upload a different photo...</h6>
-            
-            <input type="file" class="form-control">
-          </div>
-          
-        </div>
-        </div> -->
- 
-
-     <div class="form-actions">
-        <h3>recipes by @chefsteve's</h3>
-    </div>
-                
-    <br> 
-    <!-- </div> -->
-          <div class="card-deck">
-  <div class="card">
-	<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-	                <img class="img-fluid" src="images/vegetablesoup.jpg" alt="Card image cap" width="537.5">
-          <div class="card-block">
-                   <h4 class="card-title">vegetable soup</h4>
-                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-		               	<!-- <a href="ProfilePage.html" role="button"><strong><h6>@mr_bean</h6></strong></a> -->
-                    <a href="#" class="btn btn-outline-danger"><strong>add to my favorite</strong></a>
-                    <p class="card-text"><small class="text-muted">Last updated 4 mins ago</small></p>
-          <div class="card-footer">
-                    <p><a class="btn-floating">
-                    <i class="fa fa-thumbs-o-up fa-lg fa-fw" aria-hidden="true"></i><strong>309</strong>
-                    <i class="fa fa-thumbs-o-down fa-lg fa-fw" aria-hidden="true"></i><strong>198</strong>
-                   <i class="fa fa-commenting-o" aria-hidden="true"></i><strong>156</strong></a></p>
-                    </p>
-	     </div>
-    </div>
   </div>
-
-  <div class="card">
-	     <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-	               <img class="img-fluid" src="images/lasagna.jpg" alt="Card image cap" width="537.5">
-   <div class="card-block">
-                <h4 class="card-title">lasagna</h4>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>  
-                <!-- <a href="ProfilePage.html" role="button"><strong><h6>@chefsteve</h6></strong></a> -->
-                <a href="#" class="btn btn-outline-danger"><strong>add to my favorite</strong></a> 
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        <div class="card-footer">
-                <p><a class="btn-floating">
-                <i class="fa fa-thumbs-o-up fa-lg fa-fw" aria-hidden="true"></i><strong>298</strong>
-                <i class="fa fa-thumbs-o-down fa-lg fa-fw" aria-hidden="true"></i><strong>198</strong>
-                <i class="fa fa-commenting-o" aria-hidden="true"></i><strong>156</strong></a></p>
-                </p>
-	     </div>
-     </div>
-  </div>
-
-  <div class="card">
-	<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-		                 <img class="img-fluid" src="images/frenchMeal4.jpg" alt="Card image cap" width="537.5">
-    <div class="card-block">
-                      <h4 class="card-title">French pie</h4>
-                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <!-- <a href="ProfilePage.html" role="button"><strong><h6>@chefsteve</h6></strong></a> -->
-                        <a href="#" class="btn btn-outline-danger"><strong>add to my favorite</strong></a>
-                        <p class="card-text"><small class="text-muted">Last updated 35 mins ago</small></p>
-	  <div class="card-footer">
- 		                   <p><a class="btn-floating">
-                       <i class="fa fa-thumbs-o-up fa-lg fa-fw" aria-hidden="true"></i><strong>158</strong>
-                       <i class="fa fa-thumbs-o-down fa-lg fa-fw" aria-hidden="true"></i><strong>198</strong>
-                      <i class="fa fa-commenting-o" aria-hidden="true"></i><strong>156</strong></a></p>
-                      </p>
-    </div>
-  </div>
-</div> 
+</div>
+<hr>
 <div>
-    <footer class="bg-color footer2">
-        <!-- <div class="container"> -->
-            <!-- <div class="row"> -->
-              <div class="col  ">
-                  <p><div class ="author float-left">Designed by: Douglas &nbsp;&nbsp; © 2017</div>
-                        <a href="https://github.com/ddouglasz/moreRecipes "><i class="fa fa-github float-right text-white "  aria-hidden="true"></i></a>
-                      </div></button></p>
-                  
-                <!-- </div> -->
-              <!-- </div> -->
-            </div>			
+       
+  <footer class="bg-color footer2">
+    <div class="col  ">
+<p><div class ="author float-left">Designed by: Douglas &nbsp;&nbsp; © 2017</div>
+<a href="https://github.com/ddouglasz/moreRecipes "><i class="fa fa-github float-right text-white "  aria-hidden="true"><strong>&nbsp;github</strong></i></a>
+</div></button></p>
+  </div>
+</footer>
+			
 
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>

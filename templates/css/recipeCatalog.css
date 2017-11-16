@@ -88,7 +88,7 @@ font-family:"comic sans MS", cursive, sans-serif
 .display-3{
   color:white;
   /* text-shadow: 2px 2px; */
-  font-family:"comic sans MS", cursive, sans-serif
+  font-family:"comic sans MS", cursive, sans-serif;
 } 
 
 .bg-color {
@@ -232,7 +232,7 @@ position:border-top;
 }
 }
 .footer2{
-  /* position: fixed; */
+  position: fixed;
   bottom: 0px;
   width: 100%;
   background-color: #cc0000;
