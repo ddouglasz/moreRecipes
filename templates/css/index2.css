@@ -69,17 +69,8 @@ a:hover{
     color: white;
     padding: 10px 10px 10px 10px;
     text-align:center;
-  }
-  .card{
-    margin-top:50px;
-    margin-right:20px;
-    margin-bottom:50px;
-    margin-left:20px
-  }
-  .row{
-     margin-right:0px!important;
-    /* margin-left:10px; */
   } 
+   
 
 
   .latest-recipes {margin-bottom:70px;}

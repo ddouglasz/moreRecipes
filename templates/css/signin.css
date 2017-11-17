@@ -1,8 +1,8 @@
 
 .col-md-4 img{width:100%;height:100%;z-index:0;position:relative;}
 .row {margin:0;}
-#recipe-title h2 {font-size:100%;text-align:center;}
- .footer {position: fixed;bottom: 0;width: 100%;height: 60px;line-height: 60px;background-color: #ccc;z-index:100;color:#202020;}
+/* #recipe-title h2 {font-size:100%;text-align:center;} */
+ /* .footer {position: fixed;bottom: 0;width: 100%;height: 60px;line-height: 60px;background-color: #ccc;z-index:100;color:#202020;} */
 .form-signin {max-width: 350px;padding: 15px;margin: 25px auto;}
 .form-signin input[type="email"] {margin-bottom: -1px;border-bottom-right-radius: 0;border-bottom-left-radius: 0;border:1px solid #ccc;}
 .form-signin input[type="password"] {border-top-left-radius: 0;border-top-right-radius: 0;border:1px solid #ccc;}
