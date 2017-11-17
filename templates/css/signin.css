@@ -103,7 +103,7 @@ color:#cc0000!important;
   
   }
   .footer2{
-    position: fixed;
+    /* position: fixed; */
     bottom: 0px;
     width: 100%;
     background-color: #cc0000;
