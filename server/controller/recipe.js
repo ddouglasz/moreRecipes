@@ -2,7 +2,7 @@ import recipes from '../model/recipe';
 /**
  * @class recipe
  */
-class Recipes {
+class Recipe {
   /**
    * @returns {Object} recipes
    * @param {*} req
@@ -18,7 +18,7 @@ class Recipes {
    * @param {*} req
    * @param {*} res
    */
-  static createRecipes(req, res) {
+  static addRecipes(req, res) {
     recipes.push({
       id: recipes.length + 1,
       name: req.body.name,
@@ -29,11 +29,10 @@ class Recipes {
       description: req.body.description,
       image: req.body.image,
       ingredients: req.body.ingredients,
-      directions: req.bodydirections,
+      directions: req.body.directions,
     });
-    return res.json({
-      recipes,
-      message: 'new recipe  created successfully',
+    return res.json({ 
+      message: 'success',
       error: false
     });
   }
@@ -52,7 +51,7 @@ class Recipes {
         recipes[i].directions = req.body.directions;
         return res.json({
           recipes,
-          message: 'recipe updated successfully',
+          message: 'success',
           error: false
         });
       }
@@ -72,7 +71,7 @@ class Recipes {
       if (recipes[i].id === parseInt(req.params.recipeId, 10)) {
         recipes.splice(i, 1);
         return res.json({
-          message: 'recipe removed successfully',
+          message: 'success',
           error: false
         });
       }
@@ -102,5 +101,23 @@ class Recipes {
       error: true
     });
   }
+  static reviewRecipes(req,res){
+    for (let i = 0; i < recipes.length; i += 1) {
+            if (recipes[i].id === parseInt(req.params.recipeId, 10)) {
+              // console.log(recipes);
+              recipes[i].reviews.push(req.body.reviews);
+              return res.json({
+                recipes,
+                message: 'success',
+                error: false
+              });
+            }
+            return res.status(404).json({
+              message: 'recipe not found',
+              error: true
+            });
+          }
+  }
 }
-export default Recipes;
+
+export default Recipe;
