@@ -1,13 +1,18 @@
 import Recipes from '../controller/recipe';
-import recipes from '../model/recipe';
+
+import users from '../controller/users';
+
+import auth from '../middlewares/auth';
 
 export default (app) => {
-  app.get('/api/recipes', Recipes.getRecipe);
-  app.post('/api/recipes', Recipes.addRecipes);
-  app.put('/api/recipes/:recipeId', Recipes.updateRecipes);
-  app.delete('/api/recipes/:recipeId', Recipes.removeRecipes);
-  app.get('/api/recipes/:recipeId', Recipes.retrieveRecipes);
-  app.post('/api/recipes/:recipeId/reviews', Recipes.reviewRecipes);
-  // app.get('api/recipes/upvotes', Recipes.upvotes);
+  app.post('/api/v1/recipes/:recipeId/reviews', auth, Recipes.postReview);
+  app.post('/api/v1/recipes', auth, Recipes.createRecipes);
+  app.get('/api/v1/recipes', Recipes.getRecipe);
+  app.put('/api/v1/recipes/:recipeId', auth, Recipes.updateRecipes);
+  app.delete('/api/v1/recipes/:recipeId', auth, Recipes.deleteRecipes);
+  app.get('/api/v1/recipes/:recipeId', Recipes.retrieveRecipes);
+  app.get('/api/v1/users/:userId/recipes', auth, users.getFavorites);
+  app.post('/api/v1/recipes/:recipeId/favorites', auth, Recipes.favoriteRecipe);
+  app.post('/api/v1/users/signup', users.signUp);
+  app.post('/api/v1/users/signin', users.signIn);
 };
-   

@@ -1,17 +1,14 @@
-// 'use strict';
 module.exports = {
-  up: (queryInterface, Sequelize) => queryInterface.createTable('recipes', {
+  up: (queryInterface, Sequelize) => {
+    return queryInterface.createTable('reviews', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      title: {
-        type: Sequelize.STRING(100)
-      },
-      description:{
-        type: Sequelize.STRING,
+      review: {
+        type: Sequelize.TEXT
       },
       createdAt: {
         allowNull: false,
@@ -23,13 +20,19 @@ module.exports = {
       },
       userId: {
         type: Sequelize.INTEGER,
+      },
+      recipeId: {
+        type: Sequelize.INTEGER,
         onDelete: 'CASCADE',
         references: {
-          model: 'users',
+          model: 'recipes',
           key: 'id',
-          as: 'userId'
+          as: 'recipeId'
         },
       },
-    }),
-    down: (queryInterface, Sequelize) => queryInterface.dropTable('recipes')
+    });
+  },
+  down: (queryInterface, Sequelize) => {
+    return queryInterface.dropTable('reviews');
+  }
 };

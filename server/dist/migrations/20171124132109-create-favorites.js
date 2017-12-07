@@ -1,10 +1,13 @@
+'use strict';
+
 module.exports = {
-  up: (queryInterface, Sequelize) => queryInterface.createTable('favorites', {
+  up: function up(queryInterface, Sequelize) {
+    return queryInterface.createTable('favorites', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-       type: Sequelize.INTEGER
+        type: Sequelize.INTEGER
       },
       // flag: {
       //   type: Sequelize.BOOLEAN
@@ -16,7 +19,7 @@ module.exports = {
           model: 'users',
           key: 'id',
           as: 'userId'
-        },
+        }
       },
       recipeId: {
         type: Sequelize.INTEGER,
@@ -25,7 +28,7 @@ module.exports = {
           model: 'recipes',
           key: 'id',
           as: 'recipeId'
-        },
+        }
       },
       createdAt: {
         allowNull: false,
@@ -34,7 +37,10 @@ module.exports = {
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE
-      },
-    }),
-  down: (queryInterface) => queryInterface.dropTable('favorites')
+      }
+    });
+  },
+  down: function down(queryInterface) {
+    return queryInterface.dropTable('favorites');
+  }
 };

@@ -4,7 +4,10 @@ import bcrypt from 'bcrypt';
 
 import models from '../models/index';
 
-import config from '../config/config.json';
+import dotenv from 'dotenv';
+dotenv.config();
+
+const secretKey = process.env.SECRET_KEY;
 
 const saltRounds = 10;
 const usersModel = models.users;
@@ -61,7 +64,7 @@ class User {
               lastName: user.lastName,
               email: user.email
             },
-            config.JWT_SECRET,
+            secretKey,
             { expiresIn: 60 * 60 }
           )
         });

@@ -1,8 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import logger from 'morgan';
-import routes from './server/routes/index';
-
+import routes from './routes/index';
 const app = express();
 app.use(logger('dev'));
 app.use(bodyParser.json());

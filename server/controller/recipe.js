@@ -1,122 +1,161 @@
-import recipes from '../model/recipe';
+import models from '../models/index';
+
+const RecipeModel = models.recipes;
+const ReviewsModel = models.reviews;
+const FavoritesModel = models.favorites;
 /**
- * @class recipe
+ * @class Recipe
  */
 class Recipe {
   /**
    * @returns {Object} recipes
-   * @param {*} req
-   * @param {*} res
+   * @param {req} req
+   * @param {res} res
    */
   static getRecipe(req, res) {
-    return res.json({
-      recipes
-    });
-  }
+    return RecipeModel.all()
+      .then(recipe => res.status(200).json({ status: 'success', data: recipe }))
+      .catch(error => {
+        console.log(error);
+        return res.status(400).send(error);
+      });
+    }
+
   /**
-   * @returns {Object} createRecipes
-   * @param {*} req
-   * @param {*} res
+   * @returns {Object} createRecipe
+   * @param {req} req
+   * @param {res} res
    */
-  static addRecipes(req, res) {
-    recipes.push({
-      id: recipes.length + 1,
-      name: req.body.name,
-      upvotes: 0,
-      downvotes: 0,
-      favorited: 0,
-      views: 0,
-      description: req.body.description,
-      image: req.body.image,
+  static createRecipes(req, res) {
+    RecipeModel.create({
+      title: req.body.title,
+      details: req.body.details,
       ingredients: req.body.ingredients,
-      directions: req.body.directions,
-    });
-    return res.json({ 
-      message: 'success',
-      error: false
-    });
+      userId: req.decoded.id,
+    })
+      .then(recipe => res.status(201).send(recipe))
+      .catch(error => res.status(400).send(error));
   }
+
+
   /**
    * @returns {Object} updateRecipes
-   * @param {*} req
-   * @param {*} res
+   * @param {req} req
+   * @param {res} res
    */
   static updateRecipes(req, res) {
-    for (let i = 0; i < recipes.length; i += 1) {
-      if (recipes[i].id === parseInt(req.params.recipeId, 10)) {
-        recipes[i].name = req.body.name;
-        recipes[i].description = req.body.description;
-        recipes[i].image = req.body.image;
-        recipes[i].ingredients = req.body.ingredients;
-        recipes[i].directions = req.body.directions;
-        return res.json({
-          recipes,
-          message: 'success',
-          error: false
+    RecipeModel.findOne({
+      where: {
+        id: req.params.recipeId
+      }
+    }).then((recipe) => {
+      if (!recipe) {
+        return res.status(404).send({
+          message: 'Recipe Not Found',
         });
       }
-    }
-    return res.status(404).json({
-      message: 'recipe not found',
-      error: true
-    });
+
+      if (req.decoded.id !== recipe.userId) {
+        return res.status(403).send({
+          message: 'You are not authorised to edit this recipe !',
+        });
+      }
+
+      recipe.updateAttributes({
+        title: req.body.title || recipe.title,
+        ingredients: req.body.ingredients || recipe.ingredients,
+        details: req.body.details || recipe.details,
+      })
+        .then(() => res.status(200).send(recipe))
+        .catch(error => res.status(400).send(error));
+    })
+      .catch(error => res.status(400).send(error));
   }
   /**
-   * @returns {object} removeEcipes
-   * @param {*} req
-   * @param {*} res
+   * @returns {Object} deleteRecipes
+   * @param {req} req
+   * @param {res} res
    */
-  static removeRecipes(req, res) {
-    for (let i = 0; i < recipes.length; i += 1) {
-      if (recipes[i].id === parseInt(req.params.recipeId, 10)) {
-        recipes.splice(i, 1);
-        return res.json({
-          message: 'success',
-          error: false
+  static deleteRecipes(req, res) {
+    RecipeModel.findOne({
+      where: {
+        id: req.params.recipeId
+      }
+    }).then((recipe) => {
+      if (!recipe) {
+        return res.status(404).send({
+          message: 'Recipe Not Found',
         });
       }
-    }
-    return res.status(404).json({
-      message: 'recipe not found',
-      error: true
-    });
+      if (req.decoded.id !== recipe.userId) {
+        return res.status(403).send({
+          message: 'You are not authorised to delete this recipe !',
+        });
+      }
+      RecipeModel.destroy({
+        where: {
+          id: req.params.recipeId
+        }
+      }).then(() => {
+        res.status(204).send('content deleted successfully');
+      })
+        .catch(error => res.status(400).send(error));
+    })
+      .catch(error => res.status(400).send(error));
   }
   /**
-   * @returns {obj} retrieveRecipes
-   * @param {*} req
-   * @param {*} res
+   * @returns {Object} retrieveRecipes
+   * @param {req} req
+   * @param {res} res
    */
   static retrieveRecipes(req, res) {
-    for (let i = 0; i < recipes.length; i += 1) {
-      if (recipes[i].id === parseInt(req.params.recipeId, 10)) {
-        return res.json({
-          recipes: recipes[i],
-          message: 'success',
-          error: false
+    RecipeModel.findOne({
+      where: {
+        id: req.params.recipeId
+      }
+    }).then((recipe) => {
+      if (!recipe) {
+        return res.status(404).send({
+          message: 'Recipe Not Found',
         });
       }
-    }
-    return res.status(404).json({
-      message: 'recipe not found',
-      error: true
-    });
+      return res.status(200).send(recipe);
+    })
+      .catch(error => res.status(400).send(error));
   }
-  static reviewRecipes(req,res){
-    for (let i = 0; i < recipes.length; i += 1) {
-            if (recipes[i].id === parseInt(req.params.recipeId, 10)) {
-              // console.log(recipes);
-              recipes[i].reviews.push(req.body.reviews);
-              return res.json({
-                recipes,
-                message: 'success',
-                error: false
-              });
-            }
-            return res.status(404).json({
-              message: 'recipe not found',
-              error: true
-            });
-          }
+
+  /**
+   * @returns {Object} postReview
+   * @param {req} req
+   * @param {res} res
+   */
+  static postReview(req, res) {
+    ReviewsModel.create({
+      review: req.body.review,
+      userId: req.decoded.id,
+      recipeId: req.params.recipeId,
+    })
+      .then(() => {
+        res.status(201).send('Review added successfully');
+      })
+      .catch(error => res.status(400).send(error));
+  }
+
+  /**
+   * @returns {Object} favoriteRecipe
+   * @param {req} req
+   * @param {res} res
+   */
+  static favoriteRecipe(req, res) {
+    FavoritesModel.create({
+      flag: true,
+      userId: req.decoded.id,
+      recipeId: req.params.recipeId,
+    })
+      .then(() => {
+        res.status(201).send('Favorite added successfully');
+      })
+      .catch(error => res.status(400).send(error));
   }
 }
 
